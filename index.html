@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+    <title>Modelo 1er Parcial</title>
+</head>
+<body>
+    <div id="divPrincipal">
+        <div id="divSpinner" class="spinner" hidden></div>
+        <div id="divGrilla">
+            <h1>Lista de personas</h1><br>
+            <table id="table">
+                <tr>
+                    <th>ID</th><th>Nombre</th><th>Apellido</th><th>Localidad</th><th>Sexo</th>
+                </tr>
+            </table>
+        </div>
+        <div id="divForm" hidden="true">
+            <form>
+                <button type="button" id="btnCerrarForm">X</button><br>
+                <label for="inputName" >Nombre</label><input type="text" class="inputs" placeholder="Nombre" id="inputNombre"><br>
+                <label for="inputApellido" >Apellido</label><input type="text" class="inputs" placeholder="Apellido" id =inputApellido>
+                <br>
+                <label for="inputSelect">Localidad:</label><br>
+                <select class="inputs" id="inputSelect">
+                    <option value="Localidad" selected=true disabled hidden>Localidad</option>
+                </select>
+                <br>
+                <label for="radioSexo" >Sexo:</label><br>
+                <input type="radio" name="rSexo" id="rMasculino"><label for=rMasculino>Masculino</label><br>
+                <input type="radio" name="rSexo" id="rFemenino"><label for=rFemenino>Femenino</label><br>
+                <button type="button" id="btnModificar">Modificar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

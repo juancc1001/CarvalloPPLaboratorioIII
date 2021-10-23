@@ -1,0 +1,116 @@
+#divPrincipal
+{
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+#divGrilla
+{   
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    position: relative;
+    width:100%;
+}
+
+#divForm
+{
+    position: absolute;
+    top: 10rem;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 1rem;
+    padding: 2rem;
+    border-style:solid;
+    border-color: gray;
+}
+
+#table
+{
+    border-collapse:collapse;
+    justify-content: center;
+    margin: .2rem;
+    width: 40%;
+}
+
+#btnModificar
+{
+    background-color: rgb(161, 238, 8);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    border-color: white;
+    padding:.7rem 1.3rem;
+}
+
+#btnEliminar
+{
+    background-color: rgba(255, 0, 0, 0.527);
+    border-radius: .5rem;
+    border-color: white;
+    margin-left: 2.5rem;
+    padding:.7rem 1.5rem;
+}
+
+#btnCerrarForm
+{
+    background-color: red;
+}
+
+th
+{
+    background-color: rgb(195, 245, 228);
+    padding: .4rem;
+}
+
+    
+tr
+{
+    border-bottom: .05rem solid rgba(128, 128, 128, 0.479);
+}
+
+td
+{
+    padding: .4rem;
+    background-color: rgb(211, 236, 248);
+    text-align: center;
+}
+
+.inputs
+{
+    margin: .5rem;
+    border-radius: .3rem;
+    padding: .3rem;
+}
+
+.spinner 
+{
+  position: absolute;
+  z-index: 11;
+  margin: auto;
+  width: 100%;
+  top:7rem;
+  height: 100%;
+  opacity: 30%;
+  border: 2rem solid #f3f3f3; 
+  border-top: 2rem solid grey; 
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  animation: spin 2s linear infinite;
+}
+
+#divSpinner{
+    margin: auto;
+}
+
+@keyframes spin
+{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
